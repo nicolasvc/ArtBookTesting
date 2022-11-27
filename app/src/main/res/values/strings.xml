@@ -9,4 +9,7 @@
     <string name="save">Save</string>
     <string name="find_image">Find Image</string>
     <string name="image">Image</string>
+    <string name="template_name">Name: %1$s</string>
+    <string name="template_artist">Artist Name :  %1$s</string>
+    <string name="template_year">Year :  %1$s</string>
 </resources>

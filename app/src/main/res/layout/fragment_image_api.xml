@@ -18,6 +18,9 @@
         android:autofillHints="" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imageRecyclerView"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
         android:layout_margin="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

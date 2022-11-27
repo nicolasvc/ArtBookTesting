@@ -1,12 +1,8 @@
 package com.example.artbooktesting.db.daos
 
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
+import androidx.lifecycle.LiveData
+import androidx.room.*
 import com.example.artbooktesting.db.entities.ArtEntity
-import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ArtDao {
@@ -18,6 +14,6 @@ interface ArtDao {
     suspend fun deleteArt(art: ArtEntity)
 
     @Query("SELECT * FROM ArtEntity")
-    fun observeArts(): Flow<List<ArtEntity>>
+    fun observeArts(): LiveData<List<ArtEntity>>
 
 }
